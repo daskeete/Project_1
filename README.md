@@ -8,3 +8,5 @@ To lower the MSE I decided to use the spatial variable, Standard Scaler and the 
 
 Below are some descriptive statistics:
 
+![](descriptive_stats.PNG)
+
