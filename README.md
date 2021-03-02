@@ -10,3 +10,5 @@ Below are some descriptive statistics:
 
 ![](descriptive_stats.PNG)
 
+Above you can see that 75% of my data comprised of houses with prices less than $700,000 and the max price $10,995,000 so I decided to do make a boxplot.
+
