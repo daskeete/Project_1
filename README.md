@@ -30,6 +30,9 @@ The model that used the standard scaler was the best performer with an expectedl
 
 
 
+![](loss_graph.png)
+![](scatter.png)
+
 
 
 Perhaps removing the outliers would increase model performance but i wanted to keep up to the 400 observation minimum requirement
