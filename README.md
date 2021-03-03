@@ -72,7 +72,12 @@ The graph below is a scatter plot of the asking price and the predictions. It's 
 ![](scatter.png)
 
 
-## Analysis of the output that assesses and ranks all homes from best to worst deal
+## Analysis of the output that assesses and ranks all homes from best to worst deal.
+
+I created a columm that would compute how much the value of a home was overpredicted by subtracting the observed price from the predicted price and then used the code below to see how many values were above 0. 230 home values were overpredicted so my model had a tendency to overpredict.
+
+    homes[homes['overpredict'] > 0].count()
+
 
 
 
