@@ -1,5 +1,3 @@
-# Project_1
-
 ## Arlington, Texas
 
 For my project I decided to scrape 400 observations off Zillow for the city of Arlington in Texas. After cleaning the housing data and extracting variables [prices, beds, baths, sqft, zip] I noticed that the zip code column had a few missing values which I decided to manually key in. 
