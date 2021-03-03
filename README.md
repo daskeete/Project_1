@@ -72,5 +72,8 @@ The graph below is a scatter plot of the asking price and the predictions. It's 
 ![](scatter.png)
 
 
+## Analysis of the output that assesses and ranks all homes from best to worst deal
+
+
 
 Perhaps removing the outliers would increase model performance but i wanted to keep up to the 400 observation minimum requirement
