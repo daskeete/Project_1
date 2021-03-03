@@ -73,11 +73,11 @@ The graph below is a scatter plot of the asking price and the predictions. It's 
 
 ## Analysis of the output that assesses and ranks all homes from best to worst deal.
 
-I created a columm that would compute how much the value of a home was overpredicted by subtracting the observed price from the predicted price and then used the code below to see how many values were above 0. 230 home values were overpredicted so my model had a tendency to overpredict.
+I created a column that would compute how much the value of a home was overpredicted by subtracting the observed price from the predicted price and then used the code below to see how many values were above 0. 230 home values were overpredicted so my model had a tendency to overpredict.
 
     homes[homes['overpredict'] > 0].count()
 
-On the chart below any data point above 0 is according to the model overpriced and anything below 0 is underpriced/a good deal. It is hard to see but there are exactly 230 points above 0 and 170 points below 0. As you move up and further away from 0 the more bad deals you will find and vice-versa.
+The chart below is a plot of the asking prices and the model's over/underpredictions. For all values above 0 on the y axis, the model predicted a price higher than the asking price so these are the good deals. For all values below 0 on the y axis, the model predicted a price lower than the asking price so these are the bad deals. As you move up along the y axis from 0 the more good deals you will find and as you move down along the y axis from 0 the more bad deals you will find. It is hard to see but there are exactly 230 points above 0 and 170 points below 0. 
 
 
 ![](scatter_ask_predict.png)
