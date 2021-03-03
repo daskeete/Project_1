@@ -13,3 +13,9 @@ Below are some descriptive statistics:
 Above you can see that 75% of my data comprised of houses with prices less than $700,000 and the max price $10,995,000 so I decided to do make a boxplot.
 
 ![](boxplot.png)
+
+There are 99 observations with a price greater than $700,000 so we initially had 99 potential outliers.
+After calculating the IQR range I calculated the upper fence which is $1,240,045. This left my dataset with 40 definite outliers (10% of whole). I decided to keep these data points because they were a sizeable chunk of my dataset. 
+
+Below is a histogram of the housing prices.
+![](prices_histogram.png)
