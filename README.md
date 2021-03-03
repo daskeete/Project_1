@@ -28,22 +28,22 @@ Below is a log transformed histogram of the Arlington housing prices. The shape 
 I tried a few different approaches. First I tried a model without the zipcode and without scaling the data, a model with the zipcode and unscaled data, and finally two models with the Standard Scaler and the MinMax Scaler.
 The model that used the standard scaler was the best performer with an expectedly high MSE of 738,784,367,300 due to the outliers.
 Below is a code snippet:
-'''python 
-model = tf.keras.Sequential([keras.layers.Dense(units=1, input_shape=[4])])
-model.compile(optimizer='sgd', loss='mean_squared_error')
 
-x1 = homes_scaled['beds'] # number of beds
-x2 = homes_scaled['baths'] #number of baths
-x3 = homes_scaled['sqft'] #sqft
-x4 = homes_scaled['zip']
-xs = np.stack([x1,x2,x3,x4], axis=1)
-ys = homes_scaled['prices'] #price
+    model = tf.keras.Sequential([keras.layers.Dense(units=1, input_shape=[4])])
+    model.compile(optimizer='sgd', loss='mean_squared_error')
 
-history = model.fit(xs, ys, epochs=500)
-p = model.predict(xs)
-p = np.concatenate([p, xs], axis=1)
-p_back = ss.inverse_transform(p)
-'''
+    x1 = homes_scaled['beds'] # number of beds
+    x2 = homes_scaled['baths'] #number of baths
+    x3 = homes_scaled['sqft'] #sqft
+    x4 = homes_scaled['zip']
+    xs = np.stack([x1,x2,x3,x4], axis=1)
+    ys = homes_scaled['prices'] #price
+
+    history = model.fit(xs, ys, epochs=500)
+    p = model.predict(xs)
+    p = np.concatenate([p, xs], axis=1)
+    p_back = ss.inverse_transform(p)
+
 
 
 
