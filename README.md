@@ -62,7 +62,7 @@ Below is a graph that shows how the MSE was affected as we increased the number 
 
 Here is also a graph of the loss function when the model had basic scaled data and no spatial variable. The behavior of the graphs are the same. This probably means that even though the MSE was lowered by using standard scaled data and a spatial variable, these factors were unable to improve the model's ability to predict. 
 
-![](loss_graph_basic_scale_no_zip.png
+![](loss_graph_basic_scale_no_zip.png)
 
 
 
