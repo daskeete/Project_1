@@ -78,7 +78,8 @@ I created a columm that would compute how much the value of a home was overpredi
 
     homes[homes['overpredict'] > 0].count()
 
-
+On the chart below any data point above 0 is according to the model overpriced and anything below 0 is underpriced/a good deal.
+![](scatter_ask_predict.png)
 
 
 Perhaps removing the outliers would increase model performance but i wanted to keep up to the 400 observation minimum requirement
