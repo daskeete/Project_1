@@ -65,9 +65,9 @@ Here is also a graph of the loss function when the model had basic scaled data a
 ![](loss_graph_basic_scale_no_zip.png)
 
 
+## Model Output Analysis
 
-
-
+The graph below is a scatter plot of the asking price and the predictions. It's clear that the model is barely moderately good at predicting lower priced homes based on point proximity to the 45 degree line in the lower left corner of the graph. The model's predictive power became significantly worse as homes increased in price.
 
 ![](scatter.png)
 
