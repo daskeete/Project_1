@@ -78,7 +78,9 @@ I created a columm that would compute how much the value of a home was overpredi
 
     homes[homes['overpredict'] > 0].count()
 
-On the chart below any data point above 0 is according to the model overpriced and anything below 0 is underpriced/a good deal.
+On the chart below any data point above 0 is according to the model overpriced and anything below 0 is underpriced/a good deal. It is hard to see but there are exactly 230 points above 0 and 170 points below 0. 
+
+
 ![](scatter_ask_predict.png)
 
 
