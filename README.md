@@ -29,6 +29,17 @@ I tried a few different approaches. First I tried a model without the zipcode an
 The model that used the standard scaler was the best performer with an expectedly high MSE of 738,784,367,300 due to the outliers.
 Below is a code snippet:
 
+    from sklearn.preprocessing import StandardScaler as SS
+    ss = SS()
+    # homes = pd.read_csv('out.csv')
+    homes = pd.read_csv('TX.csv')
+    homes.columns
+
+    homes_scaled = ss.fit_transform(homes)
+
+    homes_scaled = pd.DataFrame(homes_scaled, columns = ['prices', 'beds', 'baths', 'sqft', 'zip'])
+    homes_scaled.head()
+
     model = tf.keras.Sequential([keras.layers.Dense(units=1, input_shape=[4])])
     model.compile(optimizer='sgd', loss='mean_squared_error')
 
@@ -45,9 +56,19 @@ Below is a code snippet:
     p_back = ss.inverse_transform(p)
 
 
-
+Below is a graph that shows how the MSE was affected as we increased the number of epochs. It is clear that after about the first 50 epochs that the model failed to improve its predictive capability.
 
 ![](loss_graph.png)
+
+Here is also a graph of the loss function when the model had basic scaled data and no spatial variable. The behavior of the graphs are the same. This probably means that even though the MSE was lowered by using standard scaled data and a spatial variable, these factors were unable to improve the model's ability to predict. 
+
+![](loss_graph_basic_scale_no_zip.png
+
+
+
+
+
+
 ![](scatter.png)
 
 
