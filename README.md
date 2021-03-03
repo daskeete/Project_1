@@ -17,5 +17,7 @@ Above you can see that 75% of my data comprised of houses with prices less than 
 There are 99 observations with a price greater than $700,000 so we initially had 99 potential outliers.
 After calculating the IQR range I calculated the upper fence which is $1,240,045. This left my dataset with 40 definite outliers (10% of whole). I decided to keep these data points because they were a sizeable chunk of my dataset. 
 
-Below is a log transformed histogram of the housing prices. The shape of the graph distribution shows that there are a lot of homes in the lower price range and very few homes in the higher price range
+Below is a log transformed histogram of the Arlington housing prices. The shape of the graph distribution shows that there are a lot of homes in the lower price range and very few homes in the higher price range
+
+
 ![](prices_histogram.png)
